@@ -33,6 +33,7 @@ public class SearchTest {
 
         List<WebElement> links = driver.findElements(By.xpath("//h3[contains(text(), 'ABC')]"));
 
+        //Abaixo estão duas formas de laço de repetição
         for (int i = 0; i < 5 && i < links.size(); i++) {
             WebElement link = links.get(i);
 
